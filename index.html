@@ -139,6 +139,68 @@
     
     
     <article
+  id="post-dockerfile"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/12/09/dockerfile/"
+    >SpringBoot微服务打包Docker镜像</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/12/09/dockerfile/" class="article-date">
+  <time datetime="2020-12-08T16:00:00.000Z" itemprop="datePublished">2020-12-09</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Docker/">Docker</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <pre><code>不同于以往的部署方式，这次尝试直接把项目打包成Docker镜像并在阿里云服务器上运行，直接开干。</code></pre>
+<p>  创建一个简单的springboot项目，添加一个controller<br><img src="https://i.loli.net/2020/12/09/H4FvuiK52aoBQrO.png" alt="项目.jpg"></p>
+<p>  测试<br><img src="https://i.loli.net/2020/12/09/eFP7R4kqVDvK36X.png" alt="测试.jpg"></p>
+<p>  打包测试下</p>
+<p><img src="https://i.loli.net/2020/12/09/zNuabHyZiBCrFn2.png" alt="打包测试.jpg"></p>
+<p>  OK，都没问题。创建dockerfile文件编写指令<br><img src="https://i.loli.net/2020/12/09/GcV6xBmFbYH3gyo.png" alt="dockerfile.jpg"></p>
+<p>  把包和指令文件上传到云服务器，build<br><img src="https://i.loli.net/2020/12/09/9ZUmla5oijFsnYu.png" alt="build.jpg"></p>
+<p>  build成功，可以看到镜像了<br><img src="https://i.loli.net/2020/12/09/GAjg1tpQ7CBVEbU.png" alt="images.jpg"></p>
+<p>  来吧，直接运行<br><img src="https://i.loli.net/2020/12/09/wK7DTyO9QpgWqPX.png" alt="run.jpg"></p>
+<p>  看下随机的端口号，测试，成功<br><img src="https://i.loli.net/2020/12/09/6IKZQyNDuwgf5ez.png" alt="success.jpg"></p>
+<p>  在游览器测试还得在阿里云配置需要暴露的端口号，就不测试了。</p>
+<hr>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
   id="post-first"
   class="article article-type-post"
   itemscope

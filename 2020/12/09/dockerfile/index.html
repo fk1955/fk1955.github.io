@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    开通博客了 |  沉梦昂志
+    SpringBoot微服务打包Docker镜像 |  沉梦昂志
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,7 +44,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-first"
+  id="post-dockerfile"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -55,18 +55,18 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  开通博客了
+  SpringBoot微服务打包Docker镜像
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/11/24/first/" class="article-date">
-  <time datetime="2020-11-24T06:22:28.000Z" itemprop="datePublished">2020-11-24</time>
+      <a href="/2020/12/09/dockerfile/" class="article-date">
+  <time datetime="2020-12-08T16:00:00.000Z" itemprop="datePublished">2020-12-09</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+    <a class="article-category-link" href="/categories/Docker/">Docker</a>
   </div>
   
 <div class="word_count">
@@ -74,7 +74,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">40</span>
+            <span class="post-count">146</span>
         </span>
     </span>
 
@@ -96,7 +96,18 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>感谢 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>，白嫖Github的服务器，挺香。<br>就是Github服务器在境外，偶尔会抽个风什么的。<br>持续完善中，有空就更新</p>
+  <pre><code>不同于以往的部署方式，这次尝试直接把项目打包成Docker镜像并在阿里云服务器上运行，直接开干。</code></pre>
+<p>  创建一个简单的springboot项目，添加一个controller<br><img src="https://i.loli.net/2020/12/09/H4FvuiK52aoBQrO.png" alt="项目.jpg"></p>
+<p>  测试<br><img src="https://i.loli.net/2020/12/09/eFP7R4kqVDvK36X.png" alt="测试.jpg"></p>
+<p>  打包测试下</p>
+<p><img src="https://i.loli.net/2020/12/09/zNuabHyZiBCrFn2.png" alt="打包测试.jpg"></p>
+<p>  OK，都没问题。创建dockerfile文件编写指令<br><img src="https://i.loli.net/2020/12/09/GcV6xBmFbYH3gyo.png" alt="dockerfile.jpg"></p>
+<p>  把包和指令文件上传到云服务器，build<br><img src="https://i.loli.net/2020/12/09/9ZUmla5oijFsnYu.png" alt="build.jpg"></p>
+<p>  build成功，可以看到镜像了<br><img src="https://i.loli.net/2020/12/09/GAjg1tpQ7CBVEbU.png" alt="images.jpg"></p>
+<p>  来吧，直接运行<br><img src="https://i.loli.net/2020/12/09/wK7DTyO9QpgWqPX.png" alt="run.jpg"></p>
+<p>  看下随机的端口号，测试，成功<br><img src="https://i.loli.net/2020/12/09/6IKZQyNDuwgf5ez.png" alt="success.jpg"></p>
+<p>  在游览器测试还得在阿里云配置需要暴露的端口号，就不测试了。</p>
+<hr>
  
       <!-- reward -->
       
@@ -167,7 +178,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2020/11/24/first/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2020/12/09/dockerfile/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -178,15 +189,11 @@
    
   <nav class="article-nav">
     
-      <a href="/2020/12/09/dockerfile/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            SpringBoot微服务打包Docker镜像
-          
-        </div>
-      </a>
     
+      <a href="/2020/11/24/first/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">开通博客了</div>
+      </a>
     
   </nav>
 
